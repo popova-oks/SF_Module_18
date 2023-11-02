@@ -9,5 +9,11 @@
 
 1. void set_permissions функция устанавливает права доступа только для владельца
 2. void demo_perms функция для демонстрации прав доступа к файлу
-3. В Makefile созданы синтетические цели: all, clean, install и uninstall
+3. Работа с файлами может осуществляться как с использованием функций:
+   - void SaveState
+   - void LoadState
+   так и с использованием перегруженных операторов:
+   - std::ostream &operator<< 
+   - std::fstream &operator>>    
+5. В Makefile созданы синтетические цели: all, clean, install и uninstall
 
